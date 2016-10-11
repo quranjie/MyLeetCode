@@ -15,7 +15,7 @@ return [0, 1].
 
 我写的算法如下：
 
-`
+```
 public int[] twoSum(int[] nums, int target) {
     int start = 0, end = nums.length - 1;
 
@@ -31,7 +31,8 @@ public int[] twoSum(int[] nums, int target) {
 
     return new int[]{-1, -1};
 }
-`
+
+```
 
 标准答案是这样的：
 
@@ -42,7 +43,9 @@ public int[] twoSum(int[] nums, int target) {
 输出：索引1 = 1，索引2 = 2
 
 分析：首先复制一份array，对其进行排序，找到符合条件的两个数，再在原数组里找到index。
-`
+
+```
+
 public int[] twoSum(int[] numbers, int target) {  
     // Note: The Solution object is instantiated only once and is reused by each test case.  
     int[] num = numbers.clone();  
@@ -84,7 +87,8 @@ public int[] twoSum(int[] numbers, int target) {
 
     return result;  
 }  
-`
+
+```
 
 我写的程序问题所在：
 1、想当然的认为数组是排好序的，以后要注意先clone已知数组，再排序
